@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>pseudo classes & pseudo elements</title>
+
+<style>
+    input[type="number"]:out-of-range{
+        border:2px solid red;
+
+    }
+    input[type="number"]:in-range{
+        border: 2px solid green;
+
+
+    }
+    input[type="email"]:invalid{
+        border:2px solid red;
+
+    }
+    input[type="email"]::placeholder{
+        color:blue;
+    }
+    p::first-line{
+        text-decoration: underline;
+    }
+    p::first-letter{
+        font-size: 20px;
+        color:red;
+
+    }
+    p::before{
+        content:"KLU :"
+
+    }
+    p::after{
+        content:"END";
+    }
+    p::selection{
+        background-color:grey;
+        color:white;
+
+    }
+    ul li::marker{
+        content:icon ;
+    }
+    li::marker{
+        color:red;
+    }
+
+</style>
+    </head>
+    <body>
+        <input type="number" placeholder="enter age" min=0 max=18 style="width: 500px;">
+    <br><br>
+    <input type="email" placeholder="enter email address">
+<br><br>
+<p>
+    hgfj gfdhg jdgfdg jsjjf
+    hgfj gfdhg jdgfdg jsjjf
+    hgfj gfdhg jdgfdg jsjjf
+    hgfj gfdhg jdgfdg jsjjfyugesdh
+    vshvfhs
+    hshg
+
+</p>
+<ul>
+    <li>KLU</li>
+    <li>EXcelR</li>
+    <li>Devops</li>
+
+</ul>
+</body>
+</html>
